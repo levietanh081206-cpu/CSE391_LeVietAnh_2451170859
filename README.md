@@ -9,8 +9,8 @@ Phần A: 100%
 - Câu A3: Done
 - Câu A4: Done
 
-Phần B: 50%
+Phần B: 75%
 - Câu B1: Done
 - Câu B2: Done
-- Câu B3: 
+- Câu B3: Done
 - Câu B4:

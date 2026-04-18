@@ -90,3 +90,6 @@ Lỗi 4: Dòng 8 - Sai cú pháp khi đóng tag <h1> - Sửa thành </h1>
 Lỗi 5: Dòng 12 - Sai cú pháp khi đóng tag <a> - Sửa thành </a>
 Lỗi 6: Dòng 21 - Sai cú pháp, không thể để hai tag móc chéo vào nhau - Đóng tag b trước rồi mới đóng p
 Lỗi 7: Dòng 40 và 42 - Sai ngữ nghĩa dành cho google - đổi thành một tag khác, ví dụ là aside
+Lỗi 8: Dòng 28 và 31 - Không có tag <thead> để tạo tiêu đề cho table - Tạo tag <thead> rồi đẩy các tiêu đề vào trong
+Lỗi 9: Dòng 32 và 35 - Không có tag <tbody> để tạo tiêu đề cho table - Tạo tag <tbody> rồi đẩy các tiêu đề vào trong
+Lỗi 10: Dòng 49 - Mở tag <p> nhưng không đóng - Thêm vào Đóng tag </p>
