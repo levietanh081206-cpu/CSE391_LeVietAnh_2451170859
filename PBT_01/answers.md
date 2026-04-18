@@ -70,3 +70,14 @@ CÂU A3
 tham chiếu: tuan1html5/04_visible_part_html.md
 
 CÂU A4
+với mỗi tag của table có ý sau đây:
+- <thead> dùng để hiển thị tiêu đề cột
+- <tbody> dùng để hiển thị các dữ liệu chính
+- <tfooter> dùng để hiển thị tổng kết của table
+
+lý do không sử dụng table để tạo layout là bởi:
+- Nó làm hỏng ngữ nghĩa mà HTML hướng đến
+- Bảng không thân thiện với người dùng vì nó khiến cho người dùng bị nhầm lẫn thứ tự đọc, trình bày không dễ hiểu
+- Cấu trúc của table bị cứng nhắc, khiến cho nó khó thích ứng được với các thiết bị khác, đặc biệt là điện thoại di động, khiến cho trang web không dễ nhìn (xấu)
+
+tham chiếu: https://www.quora.com/Why-is-it-considered-a-bad-practice-to-use-table-for-web-page-layout
