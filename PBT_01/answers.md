@@ -81,3 +81,12 @@ lý do không sử dụng table để tạo layout là bởi:
 - Cấu trúc của table bị cứng nhắc, khiến cho nó khó thích ứng được với các thiết bị khác, đặc biệt là điện thoại di động, khiến cho trang web không dễ nhìn (xấu)
 
 tham chiếu: https://www.quora.com/Why-is-it-considered-a-bad-practice-to-use-table-for-web-page-layout
+
+Câu B3
+Lỗi 1: Dòng 1 - Sai cú pháp, không tồn tại tag <DOCTYPE> - Đổi thành <DOCTYPE html>
+Lỗi 2: Dòng 2 - Mở tag <html> nhưng không có đóng - Thêm </html> vào cuối cùng để đóng
+Lỗi 3: Dòng 4 - Mở tag <title> nhưng không có đóng - Thêm </title> sau dòng "Trang web"
+Lỗi 4: Dòng 8 - Sai cú pháp khi đóng tag <h1> - Sửa thành </h1>
+Lỗi 5: Dòng 12 - Sai cú pháp khi đóng tag <a> - Sửa thành </a>
+Lỗi 6: Dòng 21 - Sai cú pháp, không thể để hai tag móc chéo vào nhau - Đóng tag b trước rồi mới đóng p
+Lỗi 7: Dòng 40 và 42 - Sai ngữ nghĩa dành cho google - đổi thành một tag khác, ví dụ là aside
