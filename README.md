@@ -13,4 +13,7 @@ Phần B: 75%
 - Câu B1: Done
 - Câu B2: Done
 - Câu B3: Done
-- Câu B4:
+- Câu B4: 50%
+
+Phần C: 50%
+- Cầu C1: Done
