@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registerForm</title>
+</head>
+<body>
+    <form action="#", method="post">
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+
+            <label for="fullname">Họ và tên:</label>
+            <input type="text", required ="", minlength="2", maxlength="50",
+            placeholder="Nguyễn Văn A", id="fullname">
+
+            <label for="email">Email:</label>
+            <input type="email", required="", id="email"
+            placeholder="tai-khoan-cua-ban@gmail.com">
+
+            <label for="Telephone">Số điện thoại:</label>
+            <input type="tel", pattern="[0-9]{10}", placeholder="0377751411",
+            id="Telephone">
+
+            <label for="Date">Ngày sinh:</label>
+            <input type="date", max="current-time", placeholder="current-time"
+            id="Date">
+
+            <script>
+                var curDate = new Date();
+      
+                // Ngày hiện tại
+                var curDay = curDate.getDate();
+ 
+                // Tháng hiện tại
+                var curMonth = curDate.getMonth() + 1;
+      
+                // Năm hiện tại
+                var curYear = curDate.getFullYear();
+ 
+                // Gán vào thẻ HTML
+                document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
+            </script>
+            <!--tham khảo: https://freetuts.net/lay-ngay-gio-hien-tai-trong-htm-3980.html-->
+        </fieldset>
+
+        <fieldset>
+            <legend>Tài khoản</legend>
+
+            <label for="user-name">Tài khoản:</label>
+            <input type="text", id="user-name",pattern="[0-9],[a-z]",
+            minlength="3", maxlength="10", placeholder="taikhoan123">
+
+            <label for="password">Mật khẩu:</label>
+            <input type="password", id="password", minlength="8",
+            pattern="(?=.*[A-Z])(?=.*[0-9])", placeholder="banQuaVIP*">
+
+            <label for="password">Nhập lại mật khẩu:</label>
+            <input type="password", id="password", minlength="8",
+            pattern="(?=.*[A-Z])(?=.*[0-9])", placeholder="banQuaVIP*">
+
+        </fieldset>
+            
+        <fieldset>
+            <legend>Thông tin giao hàng</legend>
+
+            <label for="city">Thành phố:</label>
+            <select id="city" name="city" required>
+                <option value="">-- Chọn thành phố --</option>
+                <option value="hanoi">Hà Nội</option>
+                <option value="hcm">TP. Hồ Chí Minh</option>
+                <option value="danang">Đà Nẵng</option>
+                <option value="quangngai">Quảng Ngãi</option>
+                <option value="nghean">Nghệ An</option>
+            </select>
+    
+            <label for="address">Địa chỉ:</label>
+            <textarea id="address" name="address" rows="3"
+            placeholder="Số nhà, đường, phường/xã..."></textarea>
+
+            <label for="gender">Giới tính:</label>
+            <input type="radio", id="gender", name="Sex", value="nam"> Nam
+            <input type="radio", id="gender", name="Sex", value="nu"> Nữ
+            <input type="radio", id="gender", name="Sex", value="bede"> Khác
+    
+        </fieldset>
+
+        <label>
+            <input type="checkbox" name="agree" required>
+            Tôi đồng ý với <a href="terms.html">điều khoản</a>
+        </label>
+
+        <button type="submit">Đăng ký</button>
+
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

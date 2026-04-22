@@ -64,3 +64,7 @@ Bài A5:
 - Cách một được sử dụng khi ta chỉ muốn hiển thị một hoặc bất kỳ tấm ảnh nào chúng ta muốn nó xuất hiện trên trang web. Ví dụ như ảnh background của cgv.vn.
 - Cách hai được dùng khi chúng ta muốn một hình ảnh có thể để minh họa cho một thông tin nào đó cần thiết phải có hình ảnh bên cạnh. Ví dụ như quảng cáo của một sản phẩm nào đó trên trang bán hàng online.
 
+Bài B1:
+- Đó là do các ô input của HTML chỉ có thể xác nhận thông tin của duy nhất ô của chính nó, và bản thân HTML chỉ là ngôn ngữ Markup nên không có logic để tự kiểm tra chéo qua nhau. Vì vậy, HTML không thể validate confirm password.
+
+

@@ -28,3 +28,6 @@ Phần A:
 - A3: Done
 - A4: Done
 - A5: Done
+
+Phần B:
+- B1: Done
