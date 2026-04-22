@@ -1,19 +1,29 @@
-<form action="/api/register" method="POST" id="registerForm">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <form action="#">
+        <!-- Trường hợp 1 -->
+<input type="text" required value="">   <!-- User để trống -->
+
+<!-- Trường hợp 2 -->
+<input type="email" value="abc">        <!-- User gõ "abc" -->
+
+<!-- Trường hợp 3 -->
+<input type="number" min="1" max="10" value="15"> <!-- User gõ 15 -->
+
+<!-- Trường hợp 4 -->
+<input type="text" pattern="[0-9]{10}" value="abc123"> <!-- User gõ "abc123" -->
+
+<!-- Trường hợp 5 -->
+        <input type="password" minlength="8" value="123">  <!-- User gõ "123" -->
     
-    <!-- ✅ LUÔN dùng <label> với for= -->
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-
-    <!-- ✅ Fieldset + Legend cho nhóm liên quan -->
-    <fieldset>
-        <legend>Thông tin giao hàng</legend>
-        <label for="addr">Địa chỉ:</label>
-        <input type="text" id="addr" name="addr">
-    </fieldset>
-
-    <!-- ✅ aria-label cho button icon -->
-    <button type="submit" aria-label="Gửi đơn hàng">
-        🛒 Đặt hàng
-    </button>
-</form>
-
+        <button type="submit">Submit </button>
+    </form>
+    
+</body>
+</html>
