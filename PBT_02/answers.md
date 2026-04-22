@@ -68,3 +68,59 @@ Bài B1:
 - Đó là do các ô input của HTML chỉ có thể xác nhận thông tin của duy nhất ô của chính nó, và bản thân HTML chỉ là ngôn ngữ Markup nên không có logic để tự kiểm tra chéo qua nhau. Vì vậy, HTML không thể validate confirm password.
 
 
+Bài C1:
+
+<form>
+    Tên: <input type="text">
+    
+    <input type="email" placeholder="Email của bạn">
+    
+    <input type="password" placeholder="Mật khẩu">
+    <input type="password" placeholder="Nhập lại mật khẩu">
+    
+    Phone: <input type="text" value="0901234567">
+    
+    <select>
+        <option>Hà Nội</option>
+        <option>TP.HCM</option>
+    </select>
+    
+    <label>
+        Tôi đồng ý điều khoản
+    </label>
+    
+    <input type="submit" value="Gửi">
+</form>
+
+Lỗi 1: Dòng 2 — Input "Tên" không có <label for="...">, vi phạm accessibility
+Sửa: <label for="name">Tên:</label> <input type="text" id="name" name="name" required>
+
+Lỗi 2: Dòng 4 — Input "email" không có <label for="...">, vi phạm accessibility
+Sửa: <label for="email">Email:</label> <input type="email" id="email" required placeholder="Email của bạn">
+
+Lỗi 3: Dòng 6 — Input "password" không có <label for="...">, vi phạm accessibility
+Sửa: <label for="password">Mật khẩu:</label> <input type="password" id="password" required placeholder="Mật khẩu">
+
+Lỗi 4: Dòng 7 — Input "password" (kiểm tra) không có <label for="...">, vi phạm accessibility
+Sửa: <label for="password">Mật khẩu:</label> <input type="password" id="password" required placeholder="Nhập lại mật khẩu">
+
+Lỗi 5: Dòng 9 — Input "Phone" không có <label for="...">, vi phạm accessibility
+Sửa: <label for="phone">Số điện thoại:</label> <input type="tel" id="phone" required value="0901234567">
+
+Lỗi 6: Dòng 11 — Input "Địa chỉ" không có <label for="...">, vi phạm accessibility
+Sửa: <label for="address">Địa chỉ:</label><select><option>Hà Nội</option><option>TP.HCM</option></select>
+
+Lỗi 7: Dòng 17 — Mục "Tôi đồng ý điều khoản" chưa có ô checkbox để người dùng tích, vi phạm accessibility
+Sửa:
+<label>
+    <input type="checkbox" name="agree" required>
+    Tôi đồng ý điều khoản
+</label>
+
+Lỗi 8: Dòng 18 — Mục "Tôi đồng ý điều khoản" chưa có liên kết tới trang điều khoản để người sử dụng có thể truy cập và đọc điều khoản, vi phạm accessibility
+Sửa:
+<label>
+    <input type="checkbox" name="agree" required>
+    Tôi đồng ý <a href="terms.html">điều khoản</a>
+</label>
+
