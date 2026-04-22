@@ -124,3 +124,16 @@ Sửa:
     Tôi đồng ý <a href="terms.html">điều khoản</a>
 </label>
 
+Bài C2
+2.1
+- input pattern cho CCCCD: <input type="text" pattern="[0-9]{12}">
+- input pattern cho Số tài khoản: <input type="text" pattern="[0-9]" minlenght="10" maxlenght="15">
+
+2.2
+- Đối với một ứng dụng ngân hàng, HTML5 validation không thể đáp ứng được sự đảm bảo an toàn, bởi HTML5 chỉ là một thành phần cải thiện UX cho trang web, giúp cho người sử dụng giảm thiểu sự sai lệch về định dạng khi nhập vào, nếu như họ sử dụng công cụ DevTools trên trình duyệt để xóa bỏ những thuộc tính như pattern thì tất cả đều vô nghĩa.
+
+2.3
+- Những validation mà HTML5 không thể làm là:
+    - So khớp các trường dữ liệu
+    - Kiểm tra xem tên đăng ký hoặc email đã có chưas
+    - Tạo ra logic động, ví dụ như chọn phương thức thanh toán A thì thứ phải nhập vào là A'
