@@ -20,3 +20,11 @@ Phần C: 100%
 - Câu C2: Done
 
 Phần D: 0%
+
+Tiến độ hoàn thành PBT_02:
+Phần A:
+- A1: Done
+- A2: Done
+- A3: Done
+- A4: Done
+- A5: Done

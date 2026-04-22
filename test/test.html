@@ -1,0 +1,19 @@
+<form action="/api/register" method="POST" id="registerForm">
+    
+    <!-- ✅ LUÔN dùng <label> với for= -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <!-- ✅ Fieldset + Legend cho nhóm liên quan -->
+    <fieldset>
+        <legend>Thông tin giao hàng</legend>
+        <label for="addr">Địa chỉ:</label>
+        <input type="text" id="addr" name="addr">
+    </fieldset>
+
+    <!-- ✅ aria-label cho button icon -->
+    <button type="submit" aria-label="Gửi đơn hàng">
+        🛒 Đặt hàng
+    </button>
+</form>
+
