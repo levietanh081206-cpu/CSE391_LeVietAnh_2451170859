@@ -2,7 +2,7 @@ Họ tên sinh viên: 2451170859
 Mã sinh viên: 2451170859
 Lớp quản lý: 66KTPM1
 
-Tiến độ hoàn thành:
+Tiến độ hoàn thành PBT1:
 Phần A: 100%
 - Câu A1: Done
 - Câu A2: Done
@@ -15,5 +15,8 @@ Phần B: 75%
 - Câu B3: Done
 - Câu B4: 50%
 
-Phần C: 50%
+Phần C: 100%
 - Cầu C1: Done
+- Câu C2: Done
+
+Phần D: 0%

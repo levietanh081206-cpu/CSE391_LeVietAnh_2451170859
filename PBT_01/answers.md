@@ -183,3 +183,7 @@ Câu C1
 </body>
 </html>
 
+Câu C2
+    Nếu chỉ dùng thẻ div mà không dùng các thẻ sematic khác sẽ dẫn tới nhiều bất lợi. Điều dễ thấy nhất đó chính là các thẻ div nếu đặt quá nhiều sẽ bị rối vào nhau, khiến cho người đọc code khó nhìn, từ đó khó tìm kiếm và chỉnh sửa khi có lỗi. Ngoài ra, việc dùng chỉ mỗi thẻ div còn khiến cho trang web không hiểu được cấu trúc được của trang do thẻ div chỉ là một thẻ trung tính, không thể nói lên nội dung bên trong quan trong thế nào, không giống như những thẻ sematic vốn chỉ rõ ra thẻ đang đề cập có tác dụng gì. Ta có thể thấy rõ điều này thông qua tìm kiếm một trang web bất kỳ, ở đây tôi có là WriteYourStory. Nhờ có thẻ header, trình duyệt ngay lập tức biết được đâu là phần đầu của trang web và vì vậy ngay lập tức sắp xếp nó lên đầu. Tuy nhiên, thẻ div không phải lúc nào cũng vô dụng mà vẫn có những khoảng khắc nổi bật riêng. Dễ thấy nhất là trong những trường hợp cần nhóm những phần tử không cùng ngữ nghĩa để quản lý chung, ẩn đi hoặc hiện lên chẳng hạn, những phần từ này tuy nhiều nhưng đôi khi chưa xứng đáng để nhận được coi là một khối lớn đáng quan tâm, vậy nên sử dụng div là phù hợp.
+
+    WriteYourStory: https://www.writeyourjourney.com/how-to-start-writing-your-life-story/
