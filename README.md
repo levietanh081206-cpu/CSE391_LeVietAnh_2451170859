@@ -36,3 +36,10 @@ Phần B:
 
 Phần C:
 - C1: Done
+
+Tiến độ hoàn thành PBT_03:
+Phần A:
+- A1: Done
+- A2: Done
+- A3: Done
+- A4: Done

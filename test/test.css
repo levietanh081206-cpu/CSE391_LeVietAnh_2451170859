@@ -1,0 +1,30 @@
+h1 {
+    color: #f90000;
+    font-size: 32px;
+}
+.price {
+    color: #00f900;
+    font-size: 24px;
+}
+#app header {
+    background-color: #000000;
+    padding: 20px;
+}
+nav a:first-child {
+    color: #0000f9;
+    font-weight: bold;
+}
+.product.featured h2 {
+    color: #f900f9;
+}  
+article > p {
+    font-size: 18px;
+    color: #000004;
+}   
+a[href="/"] {
+    color: #f90019;
+    text-decoration: none;
+}    
+.top-bar.dark h1 {
+    color: #f0f0f0;
+}
