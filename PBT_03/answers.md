@@ -103,5 +103,35 @@ Câu A4:
 
 3, màu của element là màu cam
 
-3, màu của element là màu đen
+4, màu của element là màu đen
 
+Câu B1:
+Các loại Selector được dùng là:
+- unversal selector: *
+
+- type selector:
+    - body
+    - header
+    - table
+    - footer
+
+- class selector:
+    - .profile-picture 
+    - .introduce-para
+
+- id selector:
+    - #about_me
+    - #skill
+
+- combination selector:
+    - footer aside
+    - footer aside label
+    - footer h6
+    - table th
+    - nav a
+    - footer aside .info .first-half
+    - footer aside .info .second-half
+    - nav a:hover
+    - nav a .active
+    - tr:nth-child(odd)
+    - tr:hover

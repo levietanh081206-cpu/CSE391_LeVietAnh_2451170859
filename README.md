@@ -43,3 +43,6 @@ Phần A:
 - A2: Done
 - A3: Done
 - A4: Done
+
+Phần B:
+- B1: Done
