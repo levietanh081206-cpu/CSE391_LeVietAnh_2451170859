@@ -1,0 +1,36 @@
+.box1 {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #000;
+}
+
+.box2 {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #000;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.container .box3 {
+    width: 250px;
+    padding: 15px;
+    background-color: aqua;
+}
+
+.container .box4 {
+    width: 500px;
+    padding: 20px;
+    background-color: blue;
+}
+
+.container .box5 {
+    width: 250px;
+    padding: 15px;
+    background-color: aqua;
+}

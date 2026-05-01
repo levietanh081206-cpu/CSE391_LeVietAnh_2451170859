@@ -135,3 +135,15 @@ Các loại Selector được dùng là:
     - nav a .active
     - tr:nth-child(odd)
     - tr:hover
+
+Câu B2:
+Phần 1
+Hộp 1 (content-box): chiều rộng thực tế = 350 px
+Hộp 2 (border-box): chiều rộng thực tế = 300 px
+
+Giải thích: Điều này xảy ra là nhờ thiết lập "box-sizing: border-box" của box2. Với box1, chiều rộng của nó không thực sự là 300px mà là 300px của nội dung bên trong + 20x2px của hai padding + khoảng 5x2px của border xung quanh, tức là 350px. Còn box2 do có thiết lập trên nên nó đã tự co lại phần content bên trong để sao cho phù hợp với padding và border bên ngoài, thành ra tổng của chúng cộng lại chính xác là 300px.
+
+Phần 2
+Khi có border-box thì: (225px + 15px*2)[box3] + (450px +20px*2)[box4] + (225px +15px*2)[box5] = 1000px = 1000px [container]
+
+Khi không có borber-box: 
