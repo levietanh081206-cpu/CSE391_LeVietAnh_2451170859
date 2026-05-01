@@ -171,3 +171,34 @@ Câu C1:
 - lý do layout bị vỡ là do kích thước thực tế mà layout phải chứa là 342 + 720 = 1060px, vượt quá khả năng chứa chiều rộng của layout vốn chỉ có 960px chiều rộng
 - ta có hai cách sửa đó là dùng border-box hoặc giảm kích thước padding (hoặc width) của side-bar và content xuống sao cho kích thước vừa với 960px
 
+Câu C2:
+- "Sản phầm A" sẽ có font-size là 20px và màu là màu xanh lá cây (green)
+    - xem xét body có specificity là 001 nhưng vì là cái đầu tiên nên element sẽ được cài đặt theo thuộc tính của nó (font-size: 16px; color: #333; )
+    - tới .container có specificity là 010 (>001) nên element sẽ được cài đặt theo thuộc tính của container (font-size: 14px; color: #333; )
+    - tiếp theo là .card có specificity là 010 (>001) nên element sẽ được cài đặt theo thuộc tính của container (font-size: 14px; color: blue; )
+    - sau đó là .card .title với specificity là (010 + 010 = 100) > 01 nên element sẽ được cài đặt theo thuộc tính của .card .title (font-size: 20px; color: blue; )
+    - .card p { color: inherit; } và #featured .title { color: red; } không gọi tới "Sản phẩm A" nên có thể bỏ qua
+    - .highlight { color: green !important; } gọi tới "Sản phẩm A" qua class highlight và do có "!important" nên tuyệt nhiên "Sản phẩm A" phải được cái theo (font-size: 20px; color: green; )
+    -> kết quả là ta có "Sản phẩm A có phông 20px và màu xanh lá cây
+- "Mô tả sản phẩm" (p trong card featured) có màu là màu inherit
+    - xem xét body có specificity là 001 nhưng vì là cái đầu tiên nên element sẽ được cài đặt theo thuộc tính của nó (font-size: 16px; color: #333; )
+    - tới .container có specificity là 010 (>001) nên element sẽ được cài đặt theo thuộc tính của container (font-size: 14px; color: #333; )
+    - tiếp theo là .card có specificity là 010 (>001) nên element sẽ được cài đặt theo thuộc tính của container (font-size: 14px; color: blue; )
+    - .card p { color: inherit; } có specificity là 011 (>010) nên element sẽ được cài đặt theo thuộc tính của container (font-size: 14px; color: inherit)
+    - #featured .title { color: red; } và .highlight { color: green !important; } không gọi tới nên có thể bỏ qua
+    -> kết quả ta có "Mô tả sản phẩm" (p trong card featured) có màu là màu inherit
+- "Sản phẩm B" (h2) có font-size = 20px và color = xanh (blue)
+    - xem xét body có specificity là 001 nhưng vì là cái đầu tiên nên element sẽ được cài đặt theo thuộc tính của nó (font-size: 16px; color: #333; )
+    - tới .container có specificity là 010 (>001) nên element sẽ được cài đặt theo thuộc tính của container (font-size: 14px; color: #333; )
+    - tiếp theo là .card có specificity là 010 (>001) nên element sẽ được cài đặt theo thuộc tính của container (font-size: 14px; color: blue; )
+    - sau đó là .card .title với specificity là (010 + 010 = 100) > 01 nên element sẽ được cài đặt theo thuộc tính của .card .title (font-size: 20px; color: blue; )
+    - .card p { color: inherit; } và #featured .title { color: red; } và .highlight { color: green !important; } không gọi tới element này nên có thể bỏ qua
+    -> kết quả ta có "Sản phẩm B" (h2) có font-size = 20px và color = xanh (blue)
+- "Mô tả sản phẩm B" (p.highlight) có color = xanh lá cây (green)
+    - xem xét body có specificity là 001 nhưng vì là cái đầu tiên nên element sẽ được cài đặt theo thuộc tính của nó (font-size: 16px; color: #333; )
+    - tới .container có specificity là 010 (>001) nên element sẽ được cài đặt theo thuộc tính của container (font-size: 14px; color: #333; )
+    - tiếp theo là .card có specificity là 010 (>001) nên element sẽ được cài đặt theo thuộc tính của container (font-size: 14px; color: blue; )
+    - sau đó là .card .title với specificity là (010 + 010 = 100) > 01 nên element sẽ được cài đặt theo thuộc tính của .card .title (font-size: 20px; color: blue; )
+    - .card p { color: inherit; } và #featured .title { color: red; } không gọi tới "Mô tả sản phẩm B" nên có thể bỏ qua
+    - .highlight { color: green !important; } gọi tới "Mô tả sản phẩm B" qua class highlight và do có "!important" nên tuyệt nhiên "Mô tả sản phẩm B" phải được cái theo (font-size: 20px; color: green; )
+    -> kết quả là ta có "Mô tả sản phẩm B" có phông 20px và màu xanh lá cây

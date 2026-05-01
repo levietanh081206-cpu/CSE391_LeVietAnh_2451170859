@@ -48,3 +48,7 @@ Phần B:
 - B1: Done
 - B2: Done
 - B3: Done
+
+Phần C:
+- C1: Done
+- C2: Done
