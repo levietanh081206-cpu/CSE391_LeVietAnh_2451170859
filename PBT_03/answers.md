@@ -147,3 +147,20 @@ Phần 2
 Khi có border-box thì: (225px + 15px*2)[box3] + (450px +20px*2)[box4] + (225px +15px*2)[box5] = 1000px = 1000px [container]
 
 Khi không có borber-box: 
+
+Câu B3:
+thứ tự các rule với specificity từ thấp tới cao là:
+- * { color: blue; } /*1, 000*/ 
+- p { color: red; } /*2, 001*/
+- *.text { color: violet; } /*3, 010*/
+- .text { color: green; } /*4, 010*/
+- p.text { color: purple; } /*5, 011*/
+- #demo { color: orange; } /*6, 100*/
+- p#demo { color: pink; } /*7, 101*/
+- .text#demo { color: brown; } /*8, 110*/
+- p.text#demo { color: gray; } /*9, 111*/
+- p { color: black !important;} /*10, vô hạn*/
+
+element cuối cùng có màu đen bởi vì giá trị của rule thứ 10 là mạnh nhất do có "!important".
+
+dù cho có thay đổi thứ tự rule trong specificity.css thì kết quả cũng không hề đổi do giá trị speficity của các rule là không đổi và trình biên dịch thì phải đọc xong specificity.css thì mới in dựa theo nó.
