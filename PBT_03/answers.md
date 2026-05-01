@@ -164,3 +164,10 @@ thứ tự các rule với specificity từ thấp tới cao là:
 element cuối cùng có màu đen bởi vì giá trị của rule thứ 10 là mạnh nhất do có "!important".
 
 dù cho có thay đổi thứ tự rule trong specificity.css thì kết quả cũng không hề đổi do giá trị speficity của các rule là không đổi và trình biên dịch thì phải đọc xong specificity.css thì mới in dựa theo nó.
+
+Câu C1:
+- chiều rộng thực tế của side-bar là 300px + 20px*2 + 1px*2 = 342px
+- chiều rộng thực tế của content là 660px + 30px*2 + 1px*2 = 722px
+- lý do layout bị vỡ là do kích thước thực tế mà layout phải chứa là 342 + 720 = 1060px, vượt quá khả năng chứa chiều rộng của layout vốn chỉ có 960px chiều rộng
+- ta có hai cách sửa đó là dùng border-box hoặc giảm kích thước padding (hoặc width) của side-bar và content xuống sao cho kích thước vừa với 960px
+

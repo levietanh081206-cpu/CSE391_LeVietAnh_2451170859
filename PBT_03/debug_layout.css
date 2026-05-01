@@ -1,0 +1,16 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.sidebar {
+    width: 290px;
+    padding: none;
+    border: 1px solid #ccc;
+    float: left;
+}
+.content {
+    width: 650px;
+    padding: none;
+    border: 1px solid #ccc;
+    float: left;
+}
