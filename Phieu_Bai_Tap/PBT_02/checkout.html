@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body>
+    <header style="background-color: burlywood;">
+        <h1>Trang web đặt hàng Online</h1>
+    </header>
+
+    <main>
+        <fieldset id="shopping-cart" style="background-color: aqua;">
+            <legend style="background-color: antiquewhite;"><h2>Giỏ hàng</h2></legend>
+            <table border="1" style="border: 1; width: 50%; background-color: antiquewhite;">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Áo khoác lông</td>
+                        <td>250,000 VND</td>
+                        <td>1</td>
+                        <td>250,000 VND</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Quần jean nam</td>
+                        <td>450,000 VND</td>
+                        <td>2</td>
+                        <td>900,000 VND</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Giày sneaker</td>
+                        <td>800,000 VND</td>
+                        <td>1</td>
+                        <td>800,000 VND</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4" style="text-align: right; font-weight: bold;">Tổng cộng:</td>
+                        <td style="font-weight: bold;">1,950,000 VND</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
+
+        <div>
+            <fieldset>
+                <legend><h2>Form thanh toán</h2></legend>
+                <form>
+                    <label for="payment-method"><b>Phương thức thanh toán:</b></label>
+                    <input type="radio", id="payment-method", name="payment-method", value="COD"> COD
+                    <input type="radio", id="payment-method", name="payment-method", value="Bank-tranfer"> Chuyển khoản
+                    <input type="radio", id="payment-method", name="payment-method", value="E-wallet"> Ví điện tử
+
+                    <label for="voucher"><b>Mã giảm giá:</b></label>
+                    <input type="text", id="voucher", pattern="(?=*SALE+[0-9]{4})">
+
+                    <label for="comments">Ghi chú:</label>
+                    <textarea id="comments" name="comments" rows="1" cols="50"
+                    placeholder="Ghi chú của bạn..."></textarea>
+
+                </form>
+            </fieldset>
+        </div>
+
+        <fieldset>
+            <legend><h2>Thông tin giao hàng</h2></legend>
+
+            <label for="date-to-ship">Ngày giao hàng:</label>
+            <input type="date" id="date-to-ship" name="date-to-ship" required
+            min="current-time" placeholder="current-time">
+
+            <label for="time-frame">Giờ giao:</label>
+            <select id="time-frame" name="time-frame" required>
+                <option value="">-- Chọn khung giờ giao hàng --</option>
+                <option value="morning">Sáng (8h-12h)</option>
+                <option value="afternoon">Chiều (14h-18h)</option>
+                <option value="evening">Tối (18h-21h)</option>
+            </select>
+
+            <label for="time-to-ship">Thời gian giao hàng:</label>
+            <input type="range" id="time-to-ship" name="time-to-ship" required
+            min="1" max="7" step="1">
+
+            <script>
+                var curDate = new Date();
+      
+                // Ngày hiện tại
+                var curDay = curDate.getDate();
+ 
+                // Tháng hiện tại
+                var curMonth = curDate.getMonth() + 1;
+      
+                // Năm hiện tại
+                var curYear = curDate.getFullYear();
+ 
+                // Gán vào thẻ HTML
+                document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
+            </script>
+            <!--tham khảo: https://freetuts.net/lay-ngay-gio-hien-tai-trong-htm-3980.html-->
+        </fieldset>
+
+        <button type="submit" aria-label="Xác nhận đặt hàng">
+            🛒 Đặt hàng
+        </button>
+    </main>
+
+    <footer>
+        <h4 style="text-align: right; margin: 10px;"><i>&copy; Presented by Zaia.</i></h4>
+    </footer>
+</body>
+</html>

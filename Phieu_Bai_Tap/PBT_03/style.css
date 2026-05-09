@@ -1,0 +1,125 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: cyan;
+    color: #000;
+    line-height: 50px;
+}
+
+header {
+    background-image: linear-gradient(to right, blue, cyan);
+    padding: 20px;
+    color: white;
+    height: 10%;
+}
+
+nav a {
+    color: white;
+    text-decoration-line: none;
+}
+
+nav a:hover {
+    color: yellow;
+    text-decoration-line: underline;
+}
+
+nav a .active {
+    color: rgb(204, 23, 204);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: rgb(44, 23, 204);
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(204, 23, 23);
+}
+
+tr:hover {
+    background-color: rgb(23, 204, 23);
+}
+
+#about_me {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+#about_me h3 {
+    width: 100%; height: min-content;
+    background-color: royalblue;
+    color: white;
+    padding: 30px; margin-top: 0%;
+}
+
+.profile-picture {
+    float: left;
+    padding: 10px;
+    margin-right: 10px;
+    width: 20%;
+}
+
+.introduce-para {
+    float: left;
+    margin-right: 20px;
+    width: 70%;
+    padding: 20px;
+    background-color: royalblue;
+}
+
+#skills {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+footer {
+    background-image: linear-gradient(to right, blue, blue);
+    padding: none;
+    color: white;
+    text-align: center;
+}
+
+footer aside {
+    margin:0%;
+    width: 100%;
+}
+
+footer aside label {
+    display: block;
+    justify-content: left;
+    color: white;
+    padding: 20px;
+}
+
+footer aside .info .first-half {
+    float: left;
+    padding: 20px;
+    width: 50%;
+}
+
+footer aside .info .second-half {
+    float: left;
+    padding: 20px;
+    width: 50%;
+}
+
+footer h6{
+    margin-right: 20px;
+    width: fill;
+    display: block;
+    justify-content: flex-end;
+}

@@ -1,0 +1,10 @@
+* { color: blue; } /*1, 000*/ 
+p { color: red; } /*2, 001*/
+*.text { color: violet; } /*3, 010*/
+.text { color: green; } /*4, 010*/
+p.text { color: purple; } /*5, 011*/
+#demo { color: orange; } /*6, 100*/
+p#demo { color: pink; } /*7, 101*/
+.text#demo { color: brown; } /*8, 110*/
+p.text#demo { color: gray; } /*9, 111*/
+p { color: black !important;} /*10, vô hạn*/

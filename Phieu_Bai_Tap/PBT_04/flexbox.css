@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: blue;
+    display: flex;
+}
+
+header .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    justify-content: left;
+    display: flex;
+}
+
+header .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+header .register {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+}
+
+header .nav a, header .register a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+header .nav a:hover, header .register a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.container {
+    display: flex; flex-wrap: wrap;
+}
+
+.grid-container {
+    display: flex; flex-wrap: wrap;
+    gap: 20px; padding: 20px;
+}
+
+.grid-container .card {
+    flex: 1 0 calc(25% - 20px);
+    border: 1px solid #ddd;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.grid-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: blue;
+}
+
+.card button {
+    margin-top: auto;
+}
