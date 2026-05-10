@@ -81,3 +81,4 @@ Phần B:
 
 Phần C:
 - C1: Done
+- C2: Done

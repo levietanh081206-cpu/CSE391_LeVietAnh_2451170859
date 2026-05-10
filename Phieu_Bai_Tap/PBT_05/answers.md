@@ -118,3 +118,58 @@ d:\Coding\CSE391_LeVietAnh_2451170859\Phieu_Bai_Tap\PBT_05\scss\style.css
     - phần lớn giống tablet
     - thanh sidebar được nới rộng ra để hiển thị thêm thông tin
     - nội dung hiển thị tăng lên thành 3 cột cho video dài và năm cột cho video ngắn
+
+## Bài C2
+    .header {
+        display: flex;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .sdt {
+        display: block;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .food-grid {
+        display: grid;
+        grid-template-column: 1fr;
+    }
+
+    .map {
+        display: block;
+    }
+
+    .form {
+        display: none
+    }
+
+    @media (min-width: 768px) {
+        .food-grid {
+            display: grid;
+            grid-template-column: 1fr 1fr;
+            gap: 20px;
+        }
+    }
+
+    
+    @media (min-width: 1024px) {
+        .food-grid {
+            display: grid;
+            grid-template-column: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .map {
+            display: block;
+        }
+
+        .form {
+            display: flex;
+        }
+    }
