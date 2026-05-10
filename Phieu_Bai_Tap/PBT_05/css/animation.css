@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #F6C390;
+}
+
+header .container {
+  position: relative;
+  width: 100%; height: 100%;
+  background-color: #533557;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.logo {
+  display: flex;
+  padding: 10px;
+  width: auto;
+}
+
+.far-container {
+  display: none;
+}
+
+.icon {
+  display: none;
+}
+
+.nav, .register {
+  display: flex;
+  color: white;
+  background-color: inherit;
+}
+
+.nav {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav ul, .register ul {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+
+.nav a, .register a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav a:hover, .register a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+.far-container a {
+  padding: 10px;
+}
+
+main .container {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+  overflow: hidden;
+}
+
+.product-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px
+}
+
+.side-bar, .ads-bar {
+  display: block;
+  align-content: center;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 1;
+    transition: all 0.3s ease;
+}
+
+.card button:hover {
+    background-color: beige;
+    color: black;
+    transform: scale(1.05)
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.ads-bar img {
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card img {
+    animation: fadeIn 2s linear infinite;
+}
