@@ -99,3 +99,22 @@ _component.scss
 Generated:
 d:\Coding\CSE391_LeVietAnh_2451170859\Phieu_Bai_Tap\PBT_05\scss\style.css.map
 d:\Coding\CSE391_LeVietAnh_2451170859\Phieu_Bai_Tap\PBT_05\scss\style.css
+
+# PHẦN C:
+## Bài C1
+- Ở bản mobile:
+    - thanh sidebar được thu gọn vào thành hamburger
+    - để thực hiện hao tác tìm kiếm thì phải ấn vào biểu tượng "tìm kiếm"
+    - nội dung được thu gọn thành một cột để hiển thị video dài và hai cột để hiển thị video ngắn
+
+- Ở bản tablet:
+    - thanh sidebar được thêm vào
+    - thêm thanh tìm kiếm trên header để có thể trực tiếp tìm kiếm nội dung
+    - thêm biểu tượng của tính năng tìm kiếm bằng giọng nói và thông báo
+    - nội dung hiển thị tăng lên thành hai cột cho video dài và ba cột cho video ngắn
+    - font không thay đổi
+
+- Ở bản desktop:
+    - phần lớn giống tablet
+    - thanh sidebar được nới rộng ra để hiển thị thêm thông tin
+    - nội dung hiển thị tăng lên thành 3 cột cho video dài và năm cột cho video ngắn
