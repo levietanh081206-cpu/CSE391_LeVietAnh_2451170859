@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h2>Sybau</h2>
+            </div>
+
+            <div class="fa-container">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="nav" id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">About me</a></li>
+                </ul>
+            </div>
+
+            <div class="register" id="register">
+                <ul>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <aside class="side-bar">
+                <h4>Đây là side-bar</h4>
+            </aside>
+
+            <div class="product-grid">
+                <div class="card">
+                    <img src="https://placehold.co/200x100" alt="">
+                    <h2></h2>
+                    <button>Mua</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/200x100" alt="">
+                    <h2></h2>
+                    <button>Mua</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/200x100" alt="">
+                    <h2></h2>
+                    <button>Mua</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/200x100" alt="">
+                    <h2></h2>
+                    <button>Mua</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/200x100" alt="">
+                    <h2></h2>
+                    <button>Mua</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/200x100" alt="">
+                    <h2></h2>
+                    <button>Mua</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/200x100" alt="">
+                    <h2></h2>
+                    <button>Mua</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/200x100" alt="">
+                    <h2></h2>
+                    <button>Mua</button>
+                </div>
+            </div>
+
+            <aside class="ads-bar">
+                <h2>Đây là ads bar</h2>
+            </aside>
+        </div>
+    </main>
+
+    <footer style="background-color: blueviolet;">
+        <p>&copy; Đây là Footer</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            var y = document.getElementById("register");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                y.style.display = "none";
+            } else {
+                x.style.display = "block";
+                y.style.display = "block";
+            }
+        }
+        <!--Nguồn tham chiếu: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+    </script>
+</body>
+</html>
