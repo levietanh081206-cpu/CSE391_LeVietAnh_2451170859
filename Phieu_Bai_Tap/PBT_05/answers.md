@@ -87,3 +87,15 @@ Nguồn tham chiếu: https://www.quora.com/Why-dont-browsers-support-SASS-LESS-
 - Trong file pakage.json, ta thêm dòng "start": "sass src/scss:public"
 
 Nguồn tham chiếu: https://viblo.asia/p/sassscss-huong-dan-setup-cho-nguoi-moi-bat-dau-PAoJe6d1L1j
+
+# PHẦN B:
+## Bài B3
+--------------------
+Watching...
+--------------------
+Change detected - 5/10/2026, 4:06:18 PM
+_component.scss
+--------------------
+Generated:
+d:\Coding\CSE391_LeVietAnh_2451170859\Phieu_Bai_Tap\PBT_05\scss\style.css.map
+d:\Coding\CSE391_LeVietAnh_2451170859\Phieu_Bai_Tap\PBT_05\scss\style.css

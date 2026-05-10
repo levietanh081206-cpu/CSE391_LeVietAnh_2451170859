@@ -1,0 +1,67 @@
+.header {
+    &__container{
+        position: relative;
+        width: 100%; height: fit-content;
+        background-color: #533557;
+        display: flex;
+        flex-shrink: 0;
+
+        &__logo {
+            display: flex;
+            padding: 10px;
+            width: 50%;
+            flex-shrink: 0;
+        }
+
+        &__nav {
+            display: none;
+            background-color: black;
+            width: 100%;
+        }
+
+        &__register {
+            display: none;
+            background-color: black;
+            width: 100%;
+        }
+    }
+}
+
+main{
+    &__container {
+        position: relative;
+
+        &__product-grid {
+            display: grid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 1fr;
+            column-gap: 20px;
+        }
+
+        &__side-bar, &__ads-bar {
+            display: none;
+        }
+
+    }
+}
+
+.product-grid {
+    &__card {
+        margin: 10px;
+        padding: 20px;
+        border: solid 2px black;
+        border-radius: 20px;
+        display: grid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

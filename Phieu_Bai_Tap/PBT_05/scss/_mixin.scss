@@ -1,0 +1,21 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == $breakpoint-tablet {
+        @media (min-width: 768px) { @content; }
+    } @else if $breakpoint == $breakpoint-desktop {
+        @media (min-width: 1024px) { @content; }
+    } @else {
+        @media (max-width: 576px) { @content; }
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
